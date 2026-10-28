@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+}
+
+header {
+    height: 60px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;git add
+    .logo {
+        padding: 17px 20px;
+        float: left;
+        h1 {
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+    .dropdown {
+        float: right;
+        margin-right: 10px;
+        ul {
+            li {
+                a {
+                    color: #fff;
+                    display: inline-block;
+                    padding: 20px;
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.2);
+                    }
+                }
+                .dropdownMenu {
+                    display: none;
+                }
+                &:hover {
+                    .dropdownMenu {
+                        background-color: #fff;
+                        position: absolute;
+                        top: 60px;
+                        right: 10px;
+                        border: 1px solid #ccc;
+                        display: block;
+                        li {
+                            border-bottom: 1px solid #ccc;
+                            a {
+                                color: #333;
+                                width: 100%;
+                                &:hover {
+                                    background-color: #ddd;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    ul {
+        li {
+            a {
+                color: #fff;
+                display: block;
+                padding: 15px 0;
+                text-align: center;
+                border-bottom: 1px solid #7c7a7a;
+
+                &:hover:not(.active) {
+                    background-color: #aaa;
+                }
+            }
+            .active {
+                background-color: rgb(0, 128, 255);
+            }
+        }
+    }
+}
+
+.tableResponsive {
+    margin: 100px 100px 0 300px;
+    overflow-x: auto;
+    h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    p {
+        opacity: 0.6;
+    }
+    table {
+        margin-top: 36px;
+        border-collapse: collapse;
+        text-align: center;
+        width: 100%;
+        thead {
+            tr {
+                th {
+                    padding: 15px;
+                    border: 1px solid #ccc;
+                    opacity: 0.6;
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:hover {
+                    background-color: #ddd !important;
+                }
+                td {
+                    padding: 15px;
+                    border: 1px solid #ccc;
+                    span {
+                        display: inline-block;
+                        padding: 8px 12px;
+                        border-radius: 4px;
+                    }
+                }
+                &:nth-child(odd) {
+                    background-color: #fff;
+                    td {
+                        &:last-child {
+                            span {
+                                background-color: green;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    td {
+                        &:last-child {
+                            span {
+                                background-color: orange;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    td {
+                        &:last-child {
+                            span {
+                                background-color: darkred;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

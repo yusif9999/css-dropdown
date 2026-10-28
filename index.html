@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>
+                <i class="fa-solid fa-chart-pie"></i>
+                AdminPanel
+            </h1>
+        </div>
+        <nav class="dropdown">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        Admin
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdownMenu">
+                        <li><a href="#">
+                            <i class="fa-solid fa-user-pen"></i>
+                            Edit Profile
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Logout
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    Customers
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    Orders
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tableResponsive">
+        <h2>Recent Orders</h2>
+        <p>The latest orders received by the system are listed below.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order No</th>
+                    <th>Customer Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1025</td>
+                    <td>Ahmet Yilmaz</td>
+                    <td>October 26, 2026</td>
+                    <td>$1,250</td>
+                    <td>
+                        <span>Completed</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#1026</td>
+                    <td>Ayse Demir</td>
+                    <td>October 26, 2026</td>
+                    <td>$850</td>
+                    <td>
+                        <span>Pending</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#1027</td>
+                    <td>Mehmet Kaya</td>
+                    <td>October 25, 2026</td>
+                    <td>$3,400</td>
+                    <td>
+                        <span>Completed</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#1028</td>
+                    <td>Zeynep Celik</td>
+                    <td>October 25, 2026</td>
+                    <td>$150</td>
+                    <td>
+                        <span>Cancelled</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
